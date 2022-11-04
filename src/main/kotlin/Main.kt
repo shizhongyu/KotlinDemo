@@ -3,6 +3,8 @@ fun main(args: Array<String>) {
 //    numsMethod()
 //    listMethod()
 //    rangeMethod()
+    println(plus(3, 5))
+    println(plusThree(3, 5))
 }
 
 fun singleMethod() {
@@ -115,4 +117,20 @@ fun rangeMethod() {
     println(intRange.joinToString())
     var charRange = 'a'..'z'
     println(charRange.joinToString())
+}
+
+
+/**
+ * 函数
+ * https://book.kotlincn.net/text/functions.html
+ */
+fun plus(x: Int, y: Int) : Int {
+    return x + y;
+}
+
+/**
+ * 默认函数
+ */
+fun plusThree(x: Int, y:Int, z:Int = 8): Int {
+    return x + y + z;
 }
