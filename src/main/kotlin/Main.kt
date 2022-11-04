@@ -1,7 +1,10 @@
 fun main(args: Array<String>) {
-    println("Hello World!")
+    singleMethod()
+}
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun singleMethod() {
+    println(KtSingle.name + "/" + KtSingle.age)
+    KtSingle.age = 20;
+    KtSingle.name = "kotlin test"
+    println(KtSingle.name + "/" + KtSingle.age)
 }
