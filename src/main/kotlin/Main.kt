@@ -2,7 +2,7 @@ fun main(args: Array<String>) {
 //    singleMethod()
 //    numsMethod()
 //    listMethod()
-    rangeMethod()
+//    rangeMethod()
 }
 
 fun singleMethod() {
@@ -108,6 +108,7 @@ fun listMethod() {
 
 /**
  * 区间
+ * https://blog.csdn.net/qq_34285557/article/details/125299864
  */
 fun rangeMethod() {
     var intRange = 1..10
