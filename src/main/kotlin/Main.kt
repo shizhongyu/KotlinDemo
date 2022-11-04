@@ -1,7 +1,8 @@
 fun main(args: Array<String>) {
 //    singleMethod()
 //    numsMethod()
-    listMethod()
+//    listMethod()
+    rangeMethod()
 }
 
 fun singleMethod() {
@@ -101,4 +102,16 @@ fun listMethod() {
     mList2.forEachIndexed { index, i ->
         println("${i}")
     }
+
+
+}
+
+/**
+ * 区间
+ */
+fun rangeMethod() {
+    var intRange = 1..10
+    println(intRange.joinToString())
+    var charRange = 'a'..'z'
+    println(charRange.joinToString())
 }
