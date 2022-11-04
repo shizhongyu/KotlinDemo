@@ -1,6 +1,7 @@
 fun main(args: Array<String>) {
 //    singleMethod()
-    numsMethod()
+//    numsMethod()
+    listMethod()
 }
 
 fun singleMethod() {
@@ -68,4 +69,36 @@ fun numsMethod() {
         println(item)
     }
 
+}
+
+/**
+ * 集合
+ * https://juejin.cn/post/6957922140767125517#heading-3
+ */
+fun listMethod() {
+    var mList2 = mutableListOf<Int>()
+    mList2.add(1)
+    mList2.add(2)
+    mList2.add(6)
+    mList2.add(4)
+    mList2.add(5)
+
+    println("---------------------")
+
+    mList2.forEach {
+        println(it)
+    }
+    println("---------------------")
+
+    mList2.forEachIndexed { index, i ->
+        println("list index : ${index} + ${i}")
+    }
+
+    mList2.set(3, 9)
+
+    println("---------------------")
+
+    mList2.forEachIndexed { index, i ->
+        println("${i}")
+    }
 }
