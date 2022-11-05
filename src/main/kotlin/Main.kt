@@ -7,7 +7,8 @@ fun main(args: Array<String>) {
 //    println(plusThree(3, 5))
 //    staticMethod()
 //    ifMethod()
-    whenMethod()
+//    whenMethod()
+    whileMethod()
 }
 
 fun singleMethod() {
@@ -177,5 +178,16 @@ fun whenMethod() {
         else -> {
             println("nothing")
         }
+    }
+}
+
+/**
+ * while表达式
+ */
+fun whileMethod() {
+    var a = 10;
+    while (a > 0) {
+        println("a = ${a}")
+        a--
     }
 }
