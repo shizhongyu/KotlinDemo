@@ -11,7 +11,8 @@ fun main(args: Array<String>) {
 //    whileMethod()
 //    constructorMethod()
 //    abstracterMethod()
-    enumMethod()
+//    enumMethod()
+    staticClassMethod()
 }
 
 fun singleMethod() {
@@ -230,3 +231,13 @@ fun enumMethod() {
         }
     }
 }
+
+/**
+ * 内部类
+ */
+fun staticClassMethod() {
+    Outer.Nested().inMethod()
+}
+
+
+
