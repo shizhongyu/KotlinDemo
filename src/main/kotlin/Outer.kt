@@ -6,4 +6,10 @@ class Outer {
             println("静态内部类")
         }
     }
+
+    inner class InnerClass {
+        fun innerMethod() {
+            println("内部类 + ${name}")
+        }
+    }
 }
