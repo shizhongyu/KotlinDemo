@@ -5,7 +5,8 @@ fun main(args: Array<String>) {
 //    rangeMethod()
 //    println(plus(3, 5))
 //    println(plusThree(3, 5))
-    staticMethod()
+//    staticMethod()
+    ifMethod()
 }
 
 fun singleMethod() {
@@ -140,4 +141,17 @@ fun staticMethod() {
     println(KtSingle.honor)
     println(App.NAME)
     println(App.add(2, 6))
+}
+
+/**
+ * if 表达式
+ */
+fun ifMethod() {
+    var a = 5
+    var b = 8;
+    if(a > b) {
+        println("a > b")
+    } else{
+        println("a < b")
+    }
 }
