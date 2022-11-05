@@ -9,7 +9,8 @@ fun main(args: Array<String>) {
 //    ifMethod()
 //    whenMethod()
 //    whileMethod()
-    constructorMethod()
+//    constructorMethod()
+    abstracterMethod()
 }
 
 fun singleMethod() {
@@ -207,4 +208,14 @@ fun constructorMethod() {
 
     var school2 = School("microli", 100, "henan")
     println("school2  " + school2.age + "  " + school2.name + "  " + school2.where)
+}
+
+/**
+ * 抽象类
+ */
+fun abstracterMethod() {
+    var tiger = Tiger();
+    println(tiger.eat())
+    println(tiger.drink())
+    println(tiger.run())
 }
