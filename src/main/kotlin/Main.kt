@@ -10,7 +10,8 @@ fun main(args: Array<String>) {
 //    whenMethod()
 //    whileMethod()
 //    constructorMethod()
-    abstracterMethod()
+//    abstracterMethod()
+    enumMethod()
 }
 
 fun singleMethod() {
@@ -218,4 +219,14 @@ fun abstracterMethod() {
     println(tiger.eat())
     println(tiger.drink())
     println(tiger.run())
+}
+
+fun enumMethod() {
+    var direction = Direction.EAST
+    when(direction) {
+        Direction.EAST-> println("EAST")
+        else-> {
+            println("other")
+        }
+    }
 }
