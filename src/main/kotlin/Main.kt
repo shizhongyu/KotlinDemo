@@ -6,7 +6,8 @@ fun main(args: Array<String>) {
 //    println(plus(3, 5))
 //    println(plusThree(3, 5))
 //    staticMethod()
-    ifMethod()
+//    ifMethod()
+    whenMethod()
 }
 
 fun singleMethod() {
@@ -153,5 +154,28 @@ fun ifMethod() {
         println("a > b")
     } else{
         println("a < b")
+    }
+}
+
+/**
+ * when 表达式
+ */
+fun whenMethod() {
+    var a = 5;
+    when(a) {
+        5 -> println("a == 5")
+        8 -> println("a == 8")
+        else -> {
+            println("nothing")
+        }
+    }
+
+    var s = "name"
+    when(s) {
+        "name" -> println("name")
+        "age" -> println("age")
+        else -> {
+            println("nothing")
+        }
     }
 }
