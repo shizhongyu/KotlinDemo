@@ -1,5 +1,6 @@
 import Utils.firstChar
 import Utils.lastChar
+import pack.User
 
 fun main(args: Array<String>) {
 //    singleMethod()
@@ -19,7 +20,8 @@ fun main(args: Array<String>) {
 //    classMethod()
 //    extendMethod()
 //    nullStringMethod()
-    typeCheckMethod()
+//    typeCheckMethod()
+    javaKotlinMethod()
 }
 
 fun singleMethod() {
@@ -287,4 +289,7 @@ fun typeCheckMethod() {
 }
 
 
-
+fun javaKotlinMethod() {
+    var user = User()
+    println(user.name + ":" + user.age)
+}
