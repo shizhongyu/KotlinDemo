@@ -18,7 +18,8 @@ fun main(args: Array<String>) {
 //    staticClassMethod()
 //    classMethod()
 //    extendMethod()
-    nullStringMethod()
+//    nullStringMethod()
+    typeCheckMethod()
 }
 
 fun singleMethod() {
@@ -272,6 +273,17 @@ fun nullStringMethod() {
     println(b)
     b = "cde"
     println(b?.length)
+}
+
+/**
+ * 类型检查和类型转换
+ */
+fun typeCheckMethod() {
+    var a = "abc"
+    println(a is String)
+    if(a is String) {
+        println(a.length)
+    }
 }
 
 
