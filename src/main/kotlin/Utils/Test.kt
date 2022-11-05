@@ -6,3 +6,9 @@ fun String.firstChar() :String {
     }
     return this[0].toString()
 }
+
+var String.lastChar :Char
+    get() = get(length - 1)
+    set(value) {
+        this.lastChar = value
+    }

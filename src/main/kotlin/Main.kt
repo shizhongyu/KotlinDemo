@@ -1,4 +1,5 @@
 import Utils.firstChar
+import Utils.lastChar
 
 fun main(args: Array<String>) {
 //    singleMethod()
@@ -251,9 +252,15 @@ fun classMethod() {
 }
 
 
+/**
+ * 扩展函数和扩展属性
+ */
 fun extendMethod() {
     println("abc".firstChar())
+    println("abc".lastChar)
 }
+
+
 
 
 
