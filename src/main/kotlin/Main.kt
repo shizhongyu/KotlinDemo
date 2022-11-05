@@ -8,7 +8,8 @@ fun main(args: Array<String>) {
 //    staticMethod()
 //    ifMethod()
 //    whenMethod()
-    whileMethod()
+//    whileMethod()
+    constructorMethod()
 }
 
 fun singleMethod() {
@@ -190,4 +191,20 @@ fun whileMethod() {
         println("a = ${a}")
         a--
     }
+}
+
+
+/**
+ * 构造函数
+ */
+fun constructorMethod() {
+    // 主构造函数
+    var student = Student("microli", 10)
+    println(student.name + "/" + student.age)
+    // 次构造函数
+    var school = School("microli", 100)
+    println("school :" + school.name + "/" + school.age)
+
+    var school2 = School("microli", 100, "henan")
+    println("school2  " + school2.age + "  " + school2.name + "  " + school2.where)
 }
