@@ -261,6 +261,9 @@ fun extendMethod() {
     println("abc".lastChar)
 }
 
+/**
+ * 可空和非空
+ */
 fun nullStringMethod() {
     var a: String = "abc" // 默认情况下，常规初始化意味着非空
 //    a = null // 编译错误
