@@ -1,3 +1,5 @@
+import Utils.firstChar
+
 fun main(args: Array<String>) {
 //    singleMethod()
 //    numsMethod()
@@ -13,7 +15,8 @@ fun main(args: Array<String>) {
 //    abstracterMethod()
 //    enumMethod()
 //    staticClassMethod()
-    classMethod()
+//    classMethod()
+    extendMethod()
 }
 
 fun singleMethod() {
@@ -245,6 +248,11 @@ fun staticClassMethod() {
  */
 fun classMethod() {
     Outer().InnerClass().innerMethod()
+}
+
+
+fun extendMethod() {
+    println("abc".firstChar())
 }
 
 
