@@ -3,8 +3,9 @@ fun main(args: Array<String>) {
 //    numsMethod()
 //    listMethod()
 //    rangeMethod()
-    println(plus(3, 5))
-    println(plusThree(3, 5))
+//    println(plus(3, 5))
+//    println(plusThree(3, 5))
+    staticMethod()
 }
 
 fun singleMethod() {
@@ -133,4 +134,10 @@ fun plus(x: Int, y: Int) : Int {
  */
 fun plusThree(x: Int, y:Int, z:Int = 8): Int {
     return x + y + z;
+}
+
+fun staticMethod() {
+    println(KtSingle.honor)
+    println(App.NAME)
+    println(App.add(2, 6))
 }
