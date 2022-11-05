@@ -17,7 +17,8 @@ fun main(args: Array<String>) {
 //    enumMethod()
 //    staticClassMethod()
 //    classMethod()
-    extendMethod()
+//    extendMethod()
+    nullStringMethod()
 }
 
 fun singleMethod() {
@@ -260,7 +261,15 @@ fun extendMethod() {
     println("abc".lastChar)
 }
 
-
+fun nullStringMethod() {
+    var a: String = "abc" // 默认情况下，常规初始化意味着非空
+//    a = null // 编译错误
+    var b: String? = "abc" // 可以设置为空
+    b = null // ok
+    println(b)
+    b = "cde"
+    println(b?.length)
+}
 
 
 
