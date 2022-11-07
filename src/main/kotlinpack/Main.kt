@@ -1,5 +1,6 @@
 import Utils.firstChar
 import Utils.lastChar
+import `interface`.Animal
 import pack.User
 
 fun main(args: Array<String>) {
@@ -21,7 +22,8 @@ fun main(args: Array<String>) {
 //    extendMethod()
 //    nullStringMethod()
 //    typeCheckMethod()
-    javaKotlinMethod()
+//    javaKotlinMethod()
+    interfaceMethod()
 }
 
 fun singleMethod() {
@@ -292,4 +294,12 @@ fun typeCheckMethod() {
 fun javaKotlinMethod() {
     var user = User()
     println(user.name + ":" + user.age)
+}
+
+/**
+ * 接口
+ */
+fun interfaceMethod() {
+    var tiger = `interface`.Tiger();
+    println(tiger.name() + "eat" + tiger.food())
 }
